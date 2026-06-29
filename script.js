@@ -19,6 +19,15 @@ window.addEventListener("scroll", () => {
     });
 });
 
+//page reload
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Message Sent Successfully!");
+    form.reset();
+});
+
 // Typing Effect
 const text = [
     "Full Stack Developer",
